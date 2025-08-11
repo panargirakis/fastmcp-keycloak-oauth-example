@@ -20,3 +20,15 @@ lint = [
 test = [
     "pytest>=8.4.1",
 ]
+
+[tool.pyright]
+include = ["src", "tests"]
+exclude = ["**/node_modules", "**/__pycache__", ".venv", ".git", "dist"]
+pythonVersion = "3.12"
+pythonPlatform = "Darwin"
+typeCheckingMode = "basic"
+reportMissingImports = true
+reportMissingTypeStubs = true
+useLibraryCodeForTypes = true
+venvPath = "."
+venv = ".venv"
