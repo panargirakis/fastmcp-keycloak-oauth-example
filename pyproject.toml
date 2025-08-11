@@ -14,6 +14,7 @@ dev = [
   {include-group = "test"}
 ]
 lint = [
+    "pyright>=1.1.403",
     "ruff>=0.12.8",
 ]
 test = [
