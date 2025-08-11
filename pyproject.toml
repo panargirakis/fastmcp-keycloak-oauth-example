@@ -3,4 +3,19 @@ name = "fastmcp-keycloak-oauth-example"
 version = "0.1.0"
 description = "A FastMCP server with OAuth metadata discovery and JWT validation with Keycloak."
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "fastmcp>=2.11.2",
+]
+
+
+[dependency-groups]
+dev = [
+  {include-group = "lint"},
+  {include-group = "test"}
+]
+lint = [
+    "ruff>=0.12.8",
+]
+test = [
+    "pytest>=8.4.1",
+]
