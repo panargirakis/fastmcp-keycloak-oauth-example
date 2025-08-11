@@ -1,0 +1,6 @@
+[project]
+name = "fastmcp-keycloak-oauth-example"
+version = "0.1.0"
+description = "A FastMCP server with OAuth metadata discovery and JWT validation with Keycloak."
+requires-python = ">=3.12"
+dependencies = []
